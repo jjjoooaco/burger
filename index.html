@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIFERENTES COSTUMBRES MATERAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="marca">
+      <img src="img/logo.svg" alt="Logo" width="40" height="40">
+      <h2>DIFERENTES COSTUMBRES MATERAS</h2>
+    </div>
+    <button id="boton-menu">☰</button>
+    <nav id="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#tipos">Tipos de mate</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio">
+      <div class="portada">
+        <h1>El mate, una costumbre para compartir</h1>
+        <p>Conocé los distintos tipos de mate y cómo disfrutarlos.</p>
+        <a class="boton" href="#tipos">Ver tipos de mate</a>
+      </div>
+    </section>
+
+    <section id="tipos">
+      <h2>Tipos de mate</h2>
+      <input type="text" id="buscador" placeholder="Buscá un mate...">
+      <div class="grilla">
+        <article class="tarjeta"><h3>Mate amargo</h3><p>Yerba y agua caliente, sin azúcar.</p></article>
+        <article class="tarjeta"><h3>Mate dulce</h3><p>Con azúcar, ideal para empezar.</p></article>
+        <article class="tarjeta"><h3>Tereré</h3><p>Mate frío con jugo y hielo.</p></article>
+        <article class="tarjeta"><h3>Mate cocido</h3><p>Yerba hervida y colada, en taza.</p></article>
+        <article class="tarjeta"><h3>Mate con naranja</h3><p>Con cáscara de naranja seca.</p></article>
+        <article class="tarjeta"><h3>Mate con yuyos</h3><p>Con hierbas como menta o peperina.</p></article>
+      </div>
+      <p id="vacio" hidden>No encontramos ningún mate con ese nombre.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+        <button class="boton" type="submit">Enviar</button>
+      </form>
+      <p id="gracias" hidden>Gracias por tu mensaje.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 DIFERENTES COSTUMBRES MATERAS</p>
+    <a href="#inicio">Volver arriba</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

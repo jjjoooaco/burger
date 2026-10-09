@@ -1,0 +1,6 @@
+El menu hamburguesa es un boton con tres rayitas que sirve para mostrar y ocultar las opciones de una pagina web. Funciona con JavaScript, que permite abrir y cerrar el menu cuando el usuario toca o hace clic en el boton.
+En el celular se usa porque la pantalla es mas chica y permite ahorrar espacio. En la computadora, como la pantalla es mas grande, las opciones se pueden mostrar directamente en una barra de navegacion, aunque tambien se puede usar el menu hamburguesa.
+La diferencia principal es que en el celular se busca aprovechar el espacio y facilitar el uso con los dedos, mientras que en la computadora hay mas espacio para mostrar las opciones.
+Yo lo hice usando JavaScript para detectar cuando se toca el boton y cambiar el menu para que se abra o se cierre. Tambien hice que el boton cambie las tres rayitas por una X cuando el menu esta abierto y que se cierre al elegir una opcion.
+En el celular se usa porque la pantall
+En conclusion, el menu hamburguesa ayuda a organizar una pagina web y permite usarla facilmente tanto en celulares como en computadoras.

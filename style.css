@@ -1,0 +1,171 @@
+:root {
+    --verde: #2f4a2b;
+    --madera: #8a5a2b;
+    --dorado: #e0b04b;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    background: var(--dorado);
+}
+a {
+    text-decoration: none;
+}
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h2 {
+    color: var(--verde);
+    margin-bottom: 15px;
+}
+h3 {
+    color: var(--madera);
+}
+p {
+    margin-bottom: 10px;
+}
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--verde);
+    color: white;
+}
+header {
+    position: relative;
+}
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header h2 {
+    color: white;
+    margin: 0;
+}
+footer p {
+    margin: 0;
+}
+footer a {
+    color: var(--dorado);
+    transition: 0.3s;
+}
+footer a:hover {
+    color: white;
+}
+#boton-menu {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--verde);
+}
+#menu.abierto {
+    display: block;
+}
+#menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    transition: 0.3s;
+}
+#menu a:hover {
+    background: var(--dorado);
+    color: var(--verde);
+}
+.portada {
+    background: var(--verde);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.pasos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.paso {
+    flex: 1 1 200px;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 24px;
+    background: var(--dorado);
+    color: var(--verde);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.boton:hover {
+    background: white;
+}
+input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+}
+.paso,
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+.tarjeta {
+    transition: 0.3s;
+}
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+@media (min-width: 600px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    .grilla {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #boton-menu {
+        display: none;
+    }
+    #menu {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+    #menu a {
+        display: inline-block;
+    }
+}
